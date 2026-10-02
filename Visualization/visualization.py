@@ -13,13 +13,12 @@ sys.path.append(eda_path)
 
 # Now, you can import `eda.py`
 import eda
-
 # Speciesselection
 species = st.multiselect(
     "Select Species",
     options=eda.penguins['species'].unique(),
     default=eda.penguins['species'].unique(),
-    
+    key="species_visualization"
 )
 
 
